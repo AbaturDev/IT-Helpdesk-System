@@ -37,6 +37,8 @@ public static class Setup
         var directory = Path.GetDirectoryName(assembly.Location)!;
         var templatesPath = Path.Combine(directory, "Templates");
         builder.Services.AddSingleton(new TemplateService(templatesPath));
+
+        builder.Services.AddHttpClient();
         
         builder.Services.AddScoped<IUserContextService, UserContextService>();
         builder.Services.AddScoped<IAccountService, AccountService>();

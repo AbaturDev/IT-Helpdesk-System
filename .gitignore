@@ -366,3 +366,8 @@ MigrationBackup/
 FodyWeavers.xsd
 
 .DS_Store
+
+*/venv
+venv
+.venv
+venv/*
